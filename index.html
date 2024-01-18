@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de compte client</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+
+    <div class="background-container">
+        <div class="form-container">
+            <form id="clientForm" onsubmit="return form_validation()">
+                <h1>Formulaire de Compte Client</h1>
+
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" class="form-control" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" class="form-control" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" class="form-control">
+        </div>
+    
+        <div class="form-group">
+            <div class="half-width">
+                <label for="cp">Code Postal :</label>
+                <input type="text" id="cp" name="cp" class="form-control">
+            </div>
+    
+            <div class="half-width">
+                <label for="ville">Ville :</label>
+                <input type="text" id="ville" name="ville" class="form-control">
+            </div>
+        </div>
+    
+        <div class="form-group">
+            <label for="tel">Téléphone :</label>
+            <input type="tel" id="tel" name="tel" class="form-control">
+        </div>
+    
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" class="form-control">
+        </div>
+    
+        <div class="form-group">
+            <label>Civilité :</label>
+            <select id="civilite" name="civilite" class="form-control" required>
+                <option value="monsieur">Monsieur</option>
+                <option value="madame">Madame</option>
+                <option value="balaine_a_bosse">Baleine à bosse</option>
+                <option value="helicoptere">Hélicoptère de combat AC-130</option>
+                <option value="Autre">Autre</option>
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="confirmPassword">Confirmer le mot de passe :</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required>
+        </div>
+    
+                <button type="submit" class="btn btn-primary">Valider</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
